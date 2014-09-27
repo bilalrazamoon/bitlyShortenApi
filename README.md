@@ -3,4 +3,4 @@ bitlyShortenApi
 
 Install Bower Components
 
-  bower install
+    bower install

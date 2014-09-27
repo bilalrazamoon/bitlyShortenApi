@@ -1,6 +1,6 @@
 bitlyShortenApi
 ===============
 
-#install bower components
+Install Bower Components
 
   bower install

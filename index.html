@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--bootstrap.css-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+    <!--style.css-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--angular.js-->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <!-- zeroclipboard.js -->
+    <script src="bower_components/zeroclipboard/dist/ZeroClipboard.min.js"></script>
+</head>
+<body>
+<div class="container" ng-controller="main">
+    <br/>
+    <div class="jumbotron">
+        <h1 class="text-center page-header">Url Shorten</h1>
+        <form>
+            <div class="input-group ">
+                <input type="text" class="form-control" ng-model="url"placeholder="{{p_text}}" autofocus>
+              <span class="input-group-btn">
+                <button ng-hide="copy" class="btn btn-primary" ng-click="submit()">Shorten</button>
+                <button ng-show="copy" id="copy-button" class="btn btn-primary">Copy</button>
+              </span>
+            </div>
+        </form>
+    </div>
+</div>
+<!--app.js-->
+<script src="js/app.js"></script>
+</body>
+</html>
